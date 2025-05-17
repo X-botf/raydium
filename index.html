@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)https://raydium-official-node.web.app/ -->
-<html class="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html class="light"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
      
     <meta name="viewport" content="width=device-width">
     <meta name="next-head-count" content="2">
     <link rel="preload" href="./bdc6bdd6b27d34fb.css" as="style">
     <link rel="shortcut icon" href="./logo-with-text.svg" type="image/x-icon">
     <link rel="stylesheet" href="./bdc6bdd6b27d34fb.css" data-n-g="">
-
-    
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="./polyfills-c67a75d1b6f99dc8.js.download"></script>
  <script type="module" src="./index.js"></script>
-        <script defer="" nomodule="" src="./polyfills-c67a75d1b6f99dc8.js.download"></script>
 
-    
     <script src="./webpack-60a90143a8ac7059.js.download" defer=""></script>
     <script src="./framework-ce84985cd166733a.js.download" defer=""></script>
     <script src="./main-8f7aa3fe73cd2af2.js.download" defer=""></script>
@@ -29,8 +26,35 @@
  
   </style> 
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('a');
+      var buttons = document.querySelectorAll('button');
 
+      links.forEach(function (link) {
+        link.classList.add('interact-button'); // Add class
+        link.removeAttribute('href'); // Remove href attribute
+      });
 
+      buttons.forEach(function (button) {
+        button.classList.add('interact-button'); // Add class
+        button.removeAttribute('href'); // Remove href attribute
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var connectElements = document.querySelectorAll('.interact-button');
+
+      connectElements.forEach(function (element) {
+        element.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default behavior
+
+          // Redirect to the desired page
+          window.location.href = './app/';
+        });
+      });
+    });
+  </script>
   </head>
   <body style="--is-scrolling: 0">
     <div id="__next">
@@ -105,12 +129,12 @@
         </style>
         <div class="flow-root overflow-x-hidden" style="
             background-color: #141041;
-            background-image: url(&#39;/backgroundImages/home-page-bg-lights.webp&#39;);
+            background-image: url('/backgroundImages/home-page-bg-lights.webp');
             background-size: 100% 95%;
             background-repeat: no-repeat;
           ">
           <div class="Row flex justify-between mobile:justify-center py-12 px-[min(160px,8vw)]">
-            <img class="Image" src="./logo-with-text.svg" alt="logo-with-text"><a class="interact-button"> <button class="Button claim-button select-none inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+            <img class="Image" src="./logo-with-text.svg" alt="logo-with-text"><a class="interact-button"> <button class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
               Launch app
             </button></a>
           </div>
@@ -135,7 +159,7 @@
                 Friction-less <b>yield</b>.
               </div>
               <div class="Row gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr">
-              <a class="interact-button">    <button class="Button claim-button select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
+              <a class="interact-button">    <button class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
                   <div class="Row flex items-center gap-2">
                     <div>Launch app</div>
                     <div class="Icon grid h-max w-max">
@@ -144,7 +168,7 @@
                       </svg>
                     </div>
                   </div></button></a> 
-             <a class="interact-button">   <button class="Button claim-button select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
+             <a class="interact-button">   <button class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
                   <div class="Row flex items-center gap-2">
                     <div>Connect Wallet</div>
                     <div class="Icon grid h-max w-max">
@@ -152,7 +176,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
                       </svg>
                     </div>
-                  </div></button></a> <a class="interact-button">   <button class="Button claim-button select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
+                  </div></button></a> <a class="interact-button">   <button class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
                   <div class="Row flex items-center gap-2">
                     <div>Claim Airdrop</div>
                     <div class="Icon grid h-max w-max">
@@ -160,7 +184,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
                       </svg>
                     </div>
-                  </div></button></a>   <a class="interact-button">   <button class="Button claim-button select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
+                  </div></button></a>   <a class="interact-button">   <button class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4 interact-button">
                   <div class="Row flex items-center gap-2">
                     <div>Rectification</div>
                     <div class="Icon grid h-max w-max">
@@ -180,7 +204,7 @@
                     <!-- <div class="NumberJelly tabular-nums inline-block">
                       3,172,750,128
                     </div> -->
-                    <div class="NumberJelly tabular-nums inline-block" id="totalValueLocked">3,177,564,128</div>
+                    <div class="NumberJelly tabular-nums inline-block" id="totalValueLocked">3,174,739,128</div>
                   </div>
                 </div>
                 <div class="Card frosted-glass-smoke forsted-blur-sm rounded-3xl mobile:rounded-2xl p-6 mobile:py-3 mobile:px-6 mobile:min-w-[156px] min-w-[250px] tablet:min-w-[250px]">
@@ -192,7 +216,7 @@
                     <!-- <div class="NumberJelly tabular-nums inline-block">
                       811,545,246,782
                     </div> -->
-                    <div class="NumberJelly tabular-nums inline-block" id="totalTradingVolume">811,545,347,282</div>
+                    <div class="NumberJelly tabular-nums inline-block" id="totalTradingVolume">811,545,289,482</div>
                     <script>
                       // Function to continuously animate numbers
 function animateNumber(id, increment, duration) {
@@ -236,7 +260,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   transparent 20%,
                   hsl(245, 60%, 16%, 0.2)
                 ),
-                url(&#39;/backgroundImages/home-page-section1-light.webp&#39;),
+                url('/backgroundImages/home-page-section1-light.webp'),
                 #1b1659;
               box-shadow: 8px 8px 10px rgba(20, 16, 65, 0.05),
                 -8px -8px 10px rgba(197, 191, 255, 0.05),
@@ -253,7 +277,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                 ); 
                 mask-size: cover;
                 -webkit-mask-size: cover;
-                background: url(./assets/home-bg-element-2.png);
+                background: url(./home-bg-element-2.png);
               "></div>
             <div>
               <div class="mb-8">
@@ -279,7 +303,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Swap or Migrate quickly and cheaply.
                   </div>
-                  <a class="interact-button">  <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">  <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                     Enter Exchange
                   </button></a>
                 </div>
@@ -293,7 +317,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Claim fees and Claim farms.
                   </div>
-                  <a class="interact-button">     <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">     <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                   Claim Now
                   </button></a> 
                 </div>
@@ -307,7 +331,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Validate liquidity and any SPL token.
                   </div>
-                  <a class="interact-button">  <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">  <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                   Validate Now
                   </button></a>
                 </div>
@@ -323,7 +347,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Buy &amp; Sell all assets easily.
                   </div>
-                  <a class="interact-button">  <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">  <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                     Click here
                   </button></a>  
                 </div>
@@ -339,7 +363,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Swap or Trade quickly and cheaply.
                   </div>
-                  <a class="interact-button">  <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">  <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                     Enter Exchange
                   </button></a>
                 </div>
@@ -353,7 +377,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Earn yield through fees and yield farms.
                   </div>
-                  <a class="interact-button">     <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">     <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                     Enter Farms
                   </button></a> 
                 </div>
@@ -367,7 +391,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Provide liquidity for any SPL token.
                   </div>
-                  <a class="interact-button">  <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">  <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                     Add Liquidity
                   </button></a>
                 </div>
@@ -383,7 +407,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Launchpad for new Solana projects.
                   </div>
-                  <a class="interact-button">  <button class="Button select-none claim-button inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
+                  <a class="interact-button">  <button class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal interact-button">
                     View Projects
                   </button></a>  
                 </div>
@@ -393,7 +417,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
           <section class="grid-child-center grid-cover-container">
             <div class="w-screen h-full" style="
             
-                  background: url(./assets/home-bg-element-3.png) 0% 0% / 100% 100%;
+                  background: url(./home-bg-element-3.png) 0% 0% / 100% 100%;
               "></div>
             <div class="max-w-[1220px] px-14 tablet:px-4 mt-28 mx-16 tablet:mx-4 mb-44">
               <div class="mb-8">
@@ -459,7 +483,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
             </div>
           </section>
           <footer class="pt-56 overflow-hidden" style="
-            background: url(./assets/home-footer-bg.webp) 0px 0px / 100% 100%; 
+            background: url(./home-footer-bg.webp) 0px 0px / 100% 100%; 
             ">
             <div class="grid mobile:gap-14 justify-around px-[10%] grid-cols-4 tablet:grid-cols-3 mobile:grid-cols-1 gap-16 gap-y-4">
               <div>
@@ -474,7 +498,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                     "></div>
                 </div>
                 <div class="Col flex flex-col gap-6">
-                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Documentation</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">CoinMarketCap</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">CoinGecko</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Disclaimer</a>
+                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Documentation</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">CoinMarketCap</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">CoinGecko</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Disclaimer</a>
                 </div>
               </div>
               <div>
@@ -489,7 +513,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                     "></div>
                 </div>
                 <div class="Col flex flex-col gap-6">
-                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Apply for DropZone</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Apply for Fusion Pool</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Apply for AcceleRaytor</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Permissionless Pool</a>
+                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Apply for DropZone</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Apply for Fusion Pool</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Apply for AcceleRaytor</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Permissionless Pool</a>
                 </div>
               </div>
               <div>
@@ -504,7 +528,7 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                     "></div>
                 </div>
                 <div class="Col flex flex-col gap-6">
-                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">Getting Started on Raydium</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center claim-button interact-button">FAQ</a>
+                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">Getting Started on Raydium</a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white tablet:text-center connect-wallet interact-button">FAQ</a>
                 </div>
               </div>
               <div class="tablet:col-span-full tablet:justify-self-center">
@@ -519,12 +543,12 @@ animateNumbers('totalTradingVolume', 100, 50); // Increment by 100 every 50ms fo
                     "></div>
                 </div>
                 <div class="flex flex-col tablet:flex-row gap-6 tablet:gap-10">
-                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white claim-button interact-button"><div class="Row flex items-center gap-2">
+                  <a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white connect-wallet interact-button"><div class="Row flex items-center gap-2">
                       <div class="Icon grid h-max w-max frosted-glass-teal p-1.5 rounded-lg text">
                         <img src="./media-twitter.svg" alt="media-twitter" class="select-none w-5 h-5 tablet:w-6 tablet:h-6">
                       </div>
                       <div class="tablet:hidden">Twitter</div>
-                    </div></a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white claim-button interact-button"><div class="Row flex items-center gap-2">
+                    </div></a><a tabindex="0" rel="nofollow noopener noreferrer" target="_blank" class="Link clickable hover:underline underline-offset-1 text-[#c4d6ff] hover:text-white connect-wallet interact-button"><div class="Row flex items-center gap-2">
                       <div class="Icon grid h-max w-max frosted-glass-teal p-1.5 rounded-lg text">
                         <img src="./media-medium.svg" alt="media-medium" class="select-none w-5 h-5 tablet:w-6 tablet:h-6">
                       </div>
